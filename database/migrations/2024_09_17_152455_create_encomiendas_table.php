@@ -67,6 +67,7 @@ return new class extends Migration {
             $table->integer('pin')->unsigned();
             $table->boolean('isTransbordo')->default(false)->nullable();
             $table->boolean('isHome')->default(false);
+            $table->string('direccion_envio')->nullable();
             $table->boolean('isReturn')->default(false);
             $table->boolean('isActive')->default(true);
             $table->timestamps();

@@ -53,6 +53,7 @@ class Encomienda extends Model
         'pin', //pin de la encomienda
         'isTransbordo', //si es transbordo
         'isHome', //si es home
+        'direccion_envio', //direccion de envio
         'isReturn', //si es retorno
         'isActive', //si esta activa
 

@@ -52,6 +52,7 @@ class EncomiendaFactory extends Factory
             'pin' => $this->faker->numberBetween(100, 999),
             'isTransbordo' => $this->faker->boolean(),
             'isHome' => $this->faker->boolean(),
+            'direccion_envio' => $this->faker->address(),
             'isReturn' => $this->faker->boolean(),
             'isActive' => $this->faker->boolean(90), // 90% chance of being true
         ];
