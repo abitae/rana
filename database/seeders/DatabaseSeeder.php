@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Caja\Caja;
-use App\Models\Caja\EntryCaja;
-use App\Models\Caja\ExitCaja;
+
 use App\Models\Configuration\Sucursal;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -18,12 +16,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        
+
         Sucursal::factory(5)->create();
         $this->call([
+            SqlFileSeeder::class,
             SucursalSeeder::class,
             TipoEntryCajaSeeder::class,
             TipoExitCajaSeeder::class,
+            CompanySeeder::class,
+            TransportistaSeeder::class,
+            VehiculoSeeder::class,
+            CustomerSeeder::class,
         ]);
         User::factory()->create([
             'name' => 'Abel Arana Cortez',

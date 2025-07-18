@@ -17,8 +17,9 @@ class TransportistaFactory extends Factory
     public function definition(): array
     {
         return [
-            'licencia' => $this->faker->randomNumber(8, false),
-            'dni' => $this->faker->randomNumber(8, false),
+            'type_code' => $this->faker->unique()->randomNumber(4),
+            'licencia' => $this->faker->unique()->randomNumber(8, false),
+            'dni' => $this->faker->unique()->randomNumber(8, false),
             'name' => $this->faker->name,
             'tipo' => 'INTERNO',
             'isActive' => true,

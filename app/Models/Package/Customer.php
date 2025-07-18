@@ -19,6 +19,7 @@ class Customer extends Model
         'email',
         'address',
         'ubigeo',
+        'texto_ubigeo',
         'isActive',
     ];
     public function encomiendas_remitente()

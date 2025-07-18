@@ -20,7 +20,6 @@ class Vehiculo extends Model
         'alto',
         'pesoBruto',
         'pesoNeto',
-        'images',
         'mtc',
         'placa',
         'nroCirculacion',

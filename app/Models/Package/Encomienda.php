@@ -16,45 +16,45 @@ class Encomienda extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'code',
-        'user_id',
-        'transportista_id',
-        'vehiculo_id',
-        'customer_id',
-        'sucursal_id',
-        'customer_dest_id',
-        'sucursal_dest_id',
-        'customer_fact_id',
-        'cantidad',
-        'monto',
-        'monto_descuento',
-        'motivo_descuento',
+        'code', //codigo de la encomienda
+        'user_id', //usuario que crea la encomienda
+        'transportista_id', //transportista
+        'vehiculo_id', //vehiculo
+        'customer_id', //remitente
+        'sucursal_id', //sucursal remitente
+        'customer_dest_id', //destinatario
+        'sucursal_dest_id', //sucursal destinatario
+        'customer_fact_id', //facturacion
+        'cantidad', //cantidad de paquetes
+        'monto', //monto total
+        'monto_descuento', //monto de descuento
+        'motivo_descuento', //motivo de descuento
 
         'doc_ticket', //documento de traslado
-        'doc_guia',
-        'doc_factura',
+        'doc_guia', //documento de guia
+        'doc_factura', //documento de factura
         //Fechas
-        'fecha_creacion',
-        'fecha_envio',
-        'fecha_recepcion',
-        'fecha_entrega',
-        'fecha_retorno',
+        'fecha_creacion', //fecha de creacion
+        'fecha_envio', //fecha de envio
+        'fecha_recepcion', //fecha de recepcion
+        'fecha_entrega', //fecha de entrega
+        'fecha_retorno', //fecha de retorno
 
         'estado_pago', //PAGADO , CONTRA ENTREGA
         'tipo_pago', // Contado, Credito
-        'metodo_pago', // Efectivo, Yape, Tarjeta, Trasnferencia
+        'metodo_pago', // Efectivo, Yape, Tarjeta, Cheque, Transferencia, Otro
         'tipo_comprobante', // TICKET, FACTURA, BOLETA
 
         'estado_credito', // Pendiente, Cancelado
-        'docsTraslado', //json de documentos
-        'glosa',
-        'observation',
+        'docsTraslado', //json de documentos de traslado
+        'glosa', //glosa de la encomienda
+        'observation', //observacion de la encomienda
         'estado_encomienda', //REGISTRADO, ENVIADO,RECIBIDO,RETORNADO, ENTREGADO
-        'pin',
-        'isTransbordo',
-        'isHome',
-        'isReturn',
-        'isActive',
+        'pin', //pin de la encomienda
+        'isTransbordo', //si es transbordo
+        'isHome', //si es home
+        'isReturn', //si es retorno
+        'isActive', //si esta activa
 
     ];
 

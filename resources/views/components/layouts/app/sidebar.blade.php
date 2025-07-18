@@ -16,6 +16,12 @@
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                     <flux:navlist.item icon="home" :href="route('caja')" :current="request()->routeIs('caja')" wire:navigate>{{ __('Caja') }}</flux:navlist.item>
                     <flux:navlist.item icon="home" :href="route('configuration.tipo-caja')" :current="request()->routeIs('configuration.tipo-caja')" wire:navigate>{{ __('Tipo Caja') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('configuration.sucursal')" :current="request()->routeIs('configuration.sucursal')" wire:navigate>{{ __('Sucursal') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('configuration.company')" :current="request()->routeIs('configuration.company')" wire:navigate>{{ __('Company') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('configuration.transportista')" :current="request()->routeIs('configuration.transportista')" wire:navigate>{{ __('Transportista') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('configuration.vehiculo')" :current="request()->routeIs('configuration.vehiculo')" wire:navigate>{{ __('Vehiculo') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('configuration.customer')" :current="request()->routeIs('configuration.customer')" wire:navigate>{{ __('Customer') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('package.encomienda')" :current="request()->routeIs('package.encomienda')" wire:navigate>{{ __('Encomienda') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
